@@ -1,5 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 --
 
@@ -12,6 +10,8 @@ vim.keymap.set("n", "-", "<C-x>")
 -- Select all
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
 vim.keymap.set("n", "<C-v>", '"+p')
+vim.keymap.set("n", "<C-c>", '"+y', opts)
+vim.keymap.set("n", "<C-x>", '"+d', opts)
 
 vim.keymap.set("n", "<C-m>", "<C-i>", opts)
 
